@@ -1,5 +1,11 @@
 # Server
 
+import pygame
+
+pygame.init()
+pygame.mixer.music.load("Background Music.mp3")
+pygame.mixer.play()
+
 def assign_scores(players_list, num_of_players):   #Defining a function to sort the players_list based on their scores and assign a rank to each player
    
     sorted_list = sorted(players_list, key=lambda x: x[2])  # Sort the players_list based on their RTTs and assigning a rank to each player based on their position in the sorted list
